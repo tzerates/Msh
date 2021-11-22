@@ -1,0 +1,28 @@
+->	fix "$" qui doit se display, "$USERr" qui doit rien display,
+	et "$USER e" (ou ' ' peut etre tout sauf alpha num & '_')
+
+->	scinder strings & words
+
+->	supprimer MYSPACEs
+
+->	O_APPEND dans open pour >>
+->	O_TRUNC " pour >
+
+->	faire les redirections (sauf <<)
+->	check redir & reidr + 1 et remove des argv
+
+->	error handler : Quand t’a une redirection tu prends tjrs le token suivant avec,
+				donc si c’est une pipe ou si il y en a pas c’est une erreur
+
+--------
+
+RESTE A FAIRE DANS LE PARSING :
+
+
+
+
+->	check pipes a la fin
+
+->	parser les pipes : ecrire l'output du prog avant et l'input du prog apres
+
+->	parser l'envp en dehors de la readline while ? (quand la free ?)
